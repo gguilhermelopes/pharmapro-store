@@ -25,7 +25,7 @@ const MainNav: FC<MainNavProps> = ({ data }) => {
           href={route.href}
           className={cn(
             "text-sm font-medium transition hover:bg-slate-100 p-2 rounded-md hover:text-black",
-            route.isActive ? "text-black" : "text-neutral-500"
+            route.isActive ? "text-black bg-slate-100" : "text-neutral-500"
           )}
         >
           {route.label}
