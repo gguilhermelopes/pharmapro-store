@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import { Billboard as BillboardType } from "@/types";
+import { cn } from "@/lib/utils";
 
 interface BillboardProps {
   data: BillboardType;
@@ -14,7 +15,7 @@ const Billboard: FC<BillboardProps> = ({ data }) => {
         className="rounded-xl relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover"
       >
         <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
-          <div className="font-bold text-gray-600 text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs  tracking-wider">
+          <div className="font-bold text-slate-700 text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs tracking-wider">
             {data?.label}
           </div>
         </div>
