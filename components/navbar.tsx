@@ -10,11 +10,14 @@ export const revalidate = 0;
 const Navbar = async () => {
   const categories = await getCategories();
   return (
-    <div className="border-b">
+    <div className="border-b bg-custom400">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-          <Link className="ml-4 flex lg:ml-0 gap-x-2" href="/">
-            <p className="font-bold text-xl">pharmaPro</p>
+        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center ">
+          <Link
+            className="ml-4 flex lg:ml-0 gap-x-2 hover:scale-105 transition"
+            href="/"
+          >
+            <p className="font-bold text-2xl text-white">pharmaPro</p>
           </Link>
           <MainNav data={categories} />
           <NavBarActions />

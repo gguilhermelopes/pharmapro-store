@@ -1,4 +1,5 @@
 "use client";
+
 import { FC } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -25,7 +26,7 @@ const MainNav: FC<MainNavProps> = ({ data }) => {
           href={route.href}
           className={cn(
             "text-sm font-medium transition hover:bg-slate-100 px-3 py-2 rounded-md hover:text-black",
-            route.isActive ? "text-black bg-slate-200" : "text-neutral-500"
+            route.isActive ? "text-black bg-slate-200" : "text-slate-100"
           )}
         >
           {route.label}
