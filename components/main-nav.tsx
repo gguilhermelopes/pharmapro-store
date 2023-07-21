@@ -37,9 +37,9 @@ const MainNav: FC<MainNavProps> = ({ data }) => {
                   index === routes.length - 1 ? "" : "border-b"
                 )}
               >
-                <Menu.Item onClick={close} as="a">
+                <Menu.Item as="a">
                   {({ close }) => (
-                    <p className="w-full h-full  px-6 py-2 " onClick={close}>
+                    <p className="w-full h-full px-6 py-2 " onClick={close}>
                       {route.label}
                     </p>
                   )}
