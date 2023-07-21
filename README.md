@@ -30,7 +30,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para instalar o pharmaPro Store , siga estas etapas:
 
 * Clone esse repositório com `git clone https://github.com/gguilhermelopes/pharmapro-store`
-* Entre na pasta com `cd dogs`
+* Entre na pasta com `cd pharmapro-store`
 * Instale as dependências com `npm install`
 * É necessário um arquivo de váriaveis de ambiente (.env) como no exemplo abaixo
 
